@@ -3,36 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Daily Food Menu · 30 easy veg curries</title>
-<meta name="description" content="30 interesting, easy veg curries, pulusu, dals and gravies for everyday Hyderabad and Telangana kitchens, with video recipes.">
+<title>Daily Food Menu · 60 easy everyday curries</title>
+<meta name="description" content="60 interesting, easy veg and non-veg curries, pulusu, dals and gravies for everyday Hyderabad and Telangana kitchens, with video recipes.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="hero">
   <p class="eyebrow">Daily Food Menu</p>
   <h1>What's for lunch today?</h1>
-  <p class="sub">30 interesting, easy veg dishes for everyday Hyderabad and Telangana kitchens.</p>
+  <p class="sub">60 interesting, easy dishes for everyday Hyderabad and Telangana kitchens.</p>
   <div class="today" id="today"></div>
 </header>
 
 <main>
   <div class="toggle" role="tablist" aria-label="Diet">
     <button class="diet active" data-diet="veg" role="tab">🥦 Veg <span id="vegCount"></span></button>
-    <button class="diet" data-diet="nonveg" role="tab">🍗 Non-veg <span>soon</span></button>
+    <button class="diet" data-diet="nonveg" role="tab">🍗 Non-veg <span id="nonvegCount"></span></button>
   </div>
 
-  <div id="vegPanel">
-    <div class="controls">
-      <input id="q" type="search" placeholder="Search dishes, e.g. pulusu, dal, brinjal" aria-label="Search">
-      <div class="chips" id="chips"></div>
-    </div>
-    <p class="count" id="count"></p>
-    <div class="grid" id="grid"></div>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search dishes, e.g. pulusu, gongura, brinjal" aria-label="Search">
+    <div class="chips" id="chips"></div>
   </div>
-
-  <div id="nonvegPanel" hidden>
-    <div class="soon">Non-veg menu is coming next. Check back soon.</div>
-  </div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
 </main>
 
 <footer>
